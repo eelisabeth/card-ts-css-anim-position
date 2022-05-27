@@ -4,4 +4,19 @@
 
 .product-card img {
     min-height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.product-card .metadata {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+    color: white;
+}
+
+.product-card .metadata h3,
+.product-card .metadata p {
+    margin: 0;
 }
