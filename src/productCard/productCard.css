@@ -46,3 +46,24 @@ figure.product-card:hover button.close {
 .product-card .metadata p {
     margin: 0;
 }
+
+.product-card .bottom-sheet {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    transform: scaleY(0);
+    transition: transform 1s;
+    transform-origin: bottom;
+}
+
+.product-card:hover .bottom-sheet {
+    transform: scale(1);
+}

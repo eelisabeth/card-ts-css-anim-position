@@ -21,6 +21,10 @@ const ProductCard: React.FC<ProductCardProps> = ({
             <button className="close" onClick={onClose}>
                 <MdClose />
             </button>
+            <div className="bottom-sheet">
+                <button onClick={onReject}>Cancel</button>
+                <button onClick={onAddToCardPressed}>Buy</button>
+            </div>
         </figure>
     )
 }
