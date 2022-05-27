@@ -1,4 +1,6 @@
 import './productCard.css';
+import { MdClose } from "react-icons/md";
+
 
 const ProductCard: React.FC<ProductCardProps> = ({
     onAddToCardPressed,
@@ -16,6 +18,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
                 <span>{`${price} $`}</span>
             </div>
             <img src={imageSrc} alt={imageDesc} />
+            <button className="close" onClick={onClose}>
+                <MdClose />
+            </button>
         </figure>
     )
 }
