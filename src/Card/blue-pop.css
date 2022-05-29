@@ -1,0 +1,44 @@
+.blue-pop {
+    background: #3085a3;
+}
+
+.blue-pop figcaption {
+    text-align: left;
+}
+
+.blue-pop figcaption > div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    width: fit-content;
+    padding: 2em;
+}
+
+.blue-pop h2,
+.blue-pop p {
+    transform: translate(0, 40px);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+}
+
+/* .blue-pop h2 { */
+    /* transition: transform 0.35s;
+}
+
+.blue-pop p {
+    font-size: 12px;
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.2s, transform 0.35s;
+}
+
+.blue-pop:hover h2, 
+.blue-pop:hover p {
+    transform: translate(0, 0);
+}
+
+.blue-pop:hover p,
+.blue-pop:hover img {
+    opacity: 1;
+} */

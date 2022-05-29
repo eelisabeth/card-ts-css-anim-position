@@ -7,7 +7,10 @@ figure {
   position: relative;
   min-width: 320px;
   max-width: 480px;
-  max-height: 480px;
+  max-height: 360px;
+  overflow: hidden;
+  width: 48%;
+  cursor: pointer;
 }
 
 figure img {
@@ -24,4 +27,7 @@ figure figcaption {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
 }
