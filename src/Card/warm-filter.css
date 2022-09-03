@@ -1,0 +1,63 @@
+.warm-filter {
+    background: linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342A 100%);
+
+}
+
+.warm-filter img {
+    opacity: 0.9;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: scale(1, 1);
+}
+
+.warm-filter:hover img {
+    opacity: 0.7;
+    transform: scale(1.2, 1.2);
+}
+
+.warm-filter figcaption {
+    padding: 3em;
+    background-color: rgba(58, 52, 42, 0.7);
+    transition: background-color 0.35s;
+}
+
+.warm-filter:hover figcaption {
+    background-color: rgba(58, 52, 42, 0);
+}
+
+.warm-filter h2 {
+    margin: 20% 0 10px 0;
+    transition: transform 0.35s;
+    transform: translateY(100%);
+}
+
+.warm-filter:hover h2 {
+    transform: translateY(0);
+}
+
+.warm-filter:hover figcaption {
+    background-color: rgba(58, 52, 42, 0);
+}
+
+.warm-filter figcaption::before {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    left: 30px;
+    bottom: 30px;
+    border: 1px solid;
+    content: "";
+}
+
+.warm-filter p,
+.warm-filter figcaption::before {
+    opacity: 0;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: scale(0);
+}
+
+.warm-filter:hover p,
+.warm-filter:hover figcaption::before {
+    opacity: 1;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: scale(1);
+}

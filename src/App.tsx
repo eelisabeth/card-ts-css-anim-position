@@ -35,6 +35,13 @@ function App() {
         className={CardClass.GreenFrame}
         imageUrl={imageUrls[1]}
       />
+
+      <Card
+        title="Warm-filter"
+        subtext='This is a ice text that you can show'
+        className={CardClass.WarmFilter}
+        imageUrl={imageUrls[2]}
+      />
     </div>
   );
 }
