@@ -1,4 +1,5 @@
 import './blue-pop.css';
+import './green-frame.css';
 
 export enum CardClass {
     BluePop ='blue-pop',

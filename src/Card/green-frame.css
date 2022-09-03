@@ -1,0 +1,93 @@
+.green-frame {
+    background-color: #18a367;
+    max-height: 300px;
+}
+
+/* rappel em
+1em = 1 unit of base font size
+font-size: 12px -> 3em = 36px
+*/
+.green-frame figcaption {
+    padding: 3em;
+}
+
+.green-frame img {
+    height: 330px;
+    /* width: 400px; */
+    max-width: unset;
+}
+
+.green-frame h2,
+.green-frame:hover p {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.green-frame p {
+    margin: 0;
+    padding: 0.5em 2em;
+    font-size: 10px;
+    opacity: 0;
+    transform: translateY(-16px);
+}
+
+.green-frame figcaption::before,
+.green-frame figcaption::after {
+    position: absolute;
+    content: "";
+    opacity: 0;
+}
+
+.green-frame figcaption::before {
+    top: 50px;
+    right: 30px;
+    bottom: 50px;
+    left: 30px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    /* background-color: green; */
+    /* scale(X, Y)  par default = 1 */
+    transform: scale(0, 1);
+}
+
+.green-frame figcaption::after {
+    top: 30px;
+    right: 50px;
+    bottom: 30px;
+    left: 50px;
+    /* background-color: red; */
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    transform: scale(1, 0);
+}
+
+.green-frame:hover figcaption::after,
+.green-frame:hover figcaption::before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.green-frame:hover figcaption::after,
+.green-frame:hover figcaption::before,
+.green-frame:hover img, 
+.green-frame:hover h2,
+.green-frame:hover p {
+    transition: transform 0.35s, opacity 0.35s;
+}
+
+.green-frame img,
+.green-frame h2 {
+    transform: translate(0, -30px);
+}
+
+.green-frame:hover p,
+.green-frame:hover h2 {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.green-frame:hover img {
+    opacity: 0.7;
+    transform: translate(0, 0);
+}
+
+
